@@ -165,11 +165,10 @@ public class Bank {
 			transactionSend = transaction.getDate().equals(date) && (transaction.getDescription().equals("Withdrawal") || transaction.getDescription().equals("Transfer") ) && transaction.getSender().equals(senderID);
 			if (transactionSend) {
 	            possibleTransacValue -= transaction.getValue();
-	            System.out.println("Dentro for: " + possibleTransacValue);
 	        }
 	    }
 		
-		System.out.println("Fora for" + possibleTransacValue);
+
 		return possibleTransacValue;
 	}
 	
@@ -215,7 +214,7 @@ public class Bank {
 		
 		Double limit;
 		
-		if(hour > 22) {
+		if(hour > 22 || hour <6) {
 			limit = account.getLimit_night();
 		} else {
 			limit = account.getLimit_day();
@@ -259,7 +258,7 @@ public class Bank {
 		
 		Double limit;
 		
-		if(hour > 22) {
+		if(hour > 22 || hour <6) {
 			limit = senderAccount.getLimit_night();
 		} else {
 			limit = senderAccount.getLimit_day();
