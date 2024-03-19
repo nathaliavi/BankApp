@@ -1,4 +1,4 @@
-[mermaid-history-2024-03-19-151429.json](https://github.com/nathaliavi/BankApp/files/14655556/mermaid-history-2024-03-19-151429.json)# BankApp
+# BankApp
 
 A aplicação funciona a partir da interação do usuário com a terminal. Exibe-se um menu com as operações que são possíveis de serem realizadas pelo banco. 
 
